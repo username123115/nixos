@@ -17,6 +17,8 @@
       inputs.nixpkgs.follows  = "nixpkgs";
 
     };
+
+    codex-desktop-linux.url = "github:ilysenko/codex-desktop-linux";
   };
 
   outputs = {self, home-manager, nixpkgs, nixpkgs-unstable, sops-nix, ... }@inputs:
