@@ -1,4 +1,10 @@
-{ config, pkgs, ... }: {
+{ codex-desktop-linux, config, pkgs, ... }: {
+  imports = [
+    codex-desktop-linux.homeManagerModules.default
+  ];
+
+  programs.codexDesktopLinux.enable = true;
+
   home.packages = with pkgs; [
 	obs-studio
 	kicad

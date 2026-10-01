@@ -31,6 +31,8 @@
 	  ../../modules/extra/tailscale.nix
 	  ../../modules/extra/flatpak.nix
 	  ../../modules/extra/xkb.nix
+
+	  ../../modules/extra/waydroid.nix
       ./hardware-configuration.nix
     ];
 
