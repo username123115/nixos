@@ -73,7 +73,8 @@
 			home-manager.useUserPackages = true;
 
 			home-manager.extraSpecialArgs = inputs // specialArgs;
-			home-manager.users.${username} = import ./users/${username}/home-min.nix; # Use minimal version
+			home-manager.users.${username} = import ./users/${username}/home.nix;
+			# home-manager.users.${username} = import ./users/${username}/home-min.nix; # Use minimal version
 		  }
 		  {
 			nix.settings.trusted-users = [username];
