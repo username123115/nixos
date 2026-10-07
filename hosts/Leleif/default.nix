@@ -14,6 +14,12 @@
 	  ./extra-users.nix
 	  ./firewall.nix
       ./hardware-configuration.nix
+	  ./caddy.nix
+
+
+	  ../../modules/desktop.nix
+	  ../../modules/fonts.nix
+	  ../../modules/av_intel.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
