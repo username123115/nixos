@@ -8,11 +8,13 @@
 	emmet-ls
     ccls
     typescript-language-server
+	vscode-langservers-extracted
     jdt-language-server
     gcc
 	virt-manager
 
 	nushell
+	opencode
 
     # Formatters
     stylua

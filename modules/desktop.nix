@@ -1,6 +1,15 @@
 # Setup a desktop / windowing environment
 { pkgs, lib, username, ... } : {
 
+  i18n.inputMethod = {
+    enable = true;
+    type = "fcitx5";
+    fcitx5.addons = with pkgs; [
+      qt6Packages.fcitx5-chinese-addons
+      fcitx5-gtk
+    ];
+  };
+
   services.xserver = {
     enable = true;
     windowManager.awesome = {
