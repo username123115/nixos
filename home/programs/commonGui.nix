@@ -12,8 +12,11 @@
 	sioyek
 
 	element-desktop
+	signal-desktop
 	libreoffice
 	moonlight-qt
+
+	walker
 
     kitty
 	alacritty

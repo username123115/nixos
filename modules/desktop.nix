@@ -22,6 +22,8 @@
     };
   };
 
+  services.elephant.enable = true;
+
   services.picom = {
     enable = true;
     backend = "glx";
