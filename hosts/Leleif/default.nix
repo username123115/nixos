@@ -14,7 +14,7 @@
 	  ./extra-users.nix
 	  ./firewall.nix
       ./hardware-configuration.nix
-	  ./caddy.nix
+	  # ./caddy.nix
 
 
 	  ../../modules/desktop.nix
