@@ -35,6 +35,7 @@
 	  ../../modules/extra/waydroid.nix
       ./hardware-configuration.nix
     ];
+  services.udev.packages = [ pkgs.picotool ];
 
   # Use the systemd-boot EFI boot loader.
   boot.loader.systemd-boot.enable = true;
