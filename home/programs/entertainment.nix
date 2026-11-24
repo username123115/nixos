@@ -1,6 +1,7 @@
 { config, pkgs, ... }: {
   home.packages = with pkgs; [
-    osu-lazer
+	# TODO: won't build
+    # osu-lazer
 	prismlauncher
 	dwarf-fortress
 	renoise

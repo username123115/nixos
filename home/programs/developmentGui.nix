@@ -7,9 +7,10 @@
 
   home.packages = with pkgs; [
 	obs-studio
-	kicad
-	kicadAddons.kikit
-	kikit
+	# TODO: cve in dependency
+	# kicad
+	# kicadAddons.kikit
+	# kikit
     blender
 	wireshark
 	arduino-ide
