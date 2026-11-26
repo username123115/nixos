@@ -1,7 +1,7 @@
 { ... } : {
   services.xserver = {
 	xkb.layout = "us,apl";
-	xkbVariant = ",dyalog";
-	xkbOptions = "grp:win_space_toggle";
+	xkb.variant = ",dyalog";
+	xkb.options = "grp:win_space_toggle";
   };
 }

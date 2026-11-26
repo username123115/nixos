@@ -2,8 +2,8 @@
   home.packages = with pkgs; [
     flameshot
     xclip
-    xorg.xrandr
-	xorg.libX11
+    xrandr
+	libX11
 	arandr
   ];
 }

@@ -26,7 +26,7 @@
 	nemo
 
 	ffmpeg
-	swww
+	awww
 
 	qbittorrent
 
