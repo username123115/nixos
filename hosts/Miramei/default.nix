@@ -7,7 +7,6 @@
     ../../modules/desktop.nix
     ../../modules/fonts.nix
     ../../modules/system.nix
-    ../../modules/sops.nix
     ../../modules/extraHosts.nix	
 
     ../../modules/extra/podman.nix

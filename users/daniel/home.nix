@@ -18,8 +18,8 @@
 	../../home/programs/x11.nix
   ];
 
-  programs.git = {
-    userName = "Daniel Jin";
-    userEmail = "mrpickles123115@gmail.com";
+  programs.git.settings = {
+    user.name = "Daniel Jin";
+    user.email = "mrpickles123115@gmail.com";
   };
 }

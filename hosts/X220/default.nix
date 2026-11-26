@@ -9,7 +9,6 @@
     ../../modules/fonts.nix
     ../../modules/laptop.nix
     ../../modules/system.nix
-    ../../modules/sops.nix
     ../../modules/extraHosts.nix	
 
 	  ../../modules/extra/udiskie.nix

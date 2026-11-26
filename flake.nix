@@ -7,11 +7,6 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-26.05";
 	nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
-    sops-nix = {
-      url = "github:Mic92/sops-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
     home-manager = {
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows  = "nixpkgs";
@@ -21,7 +16,7 @@
     codex-desktop-linux.url = "github:ilysenko/codex-desktop-linux";
   };
 
-  outputs = {self, home-manager, nixpkgs, nixpkgs-unstable, sops-nix, ... }@inputs:
+  outputs = {self, home-manager, nixpkgs, nixpkgs-unstable, ... }@inputs:
   let
 	system = "x86_64-linux";
 	unstablePkgs = import nixpkgs-unstable {
@@ -40,7 +35,6 @@
 		inherit system specialArgs;
 		modules = [
 		  ./hosts/X1C
-		  sops-nix.nixosModules.sops
 		  home-manager.nixosModules.home-manager 
 		  {
 			nixpkgs.overlays = [ unstableOverlay ];
@@ -65,7 +59,6 @@
 		inherit system specialArgs;
 		modules = [
 		  ./hosts/Leleif
-		  sops-nix.nixosModules.sops
 		  home-manager.nixosModules.home-manager 
 		  {
 			nixpkgs.overlays = [ unstableOverlay ];
@@ -91,7 +84,6 @@
 		inherit system specialArgs;
 		modules = [
 		  ./hosts/Sakamoto
-		  sops-nix.nixosModules.sops
 		  home-manager.nixosModules.home-manager 
 		  {
 			nixpkgs.overlays = [ unstableOverlay ];
@@ -116,7 +108,6 @@
 		inherit system specialArgs;
 		modules = [
 		  ./hosts/Linode
-		  sops-nix.nixosModules.sops
 		  home-manager.nixosModules.home-manager 
 		  {
 			nixpkgs.overlays = [ unstableOverlay ];
@@ -140,7 +131,6 @@
 		inherit system specialArgs;
 		modules = [
 		  ./hosts/Miramei
-		  sops-nix.nixosModules.sops
 		  home-manager.nixosModules.home-manager 
 		  {
 			nixpkgs.overlays = [ unstableOverlay ];
@@ -165,7 +155,6 @@
 		inherit system specialArgs;
 		modules = [
 		  ./hosts/X220
-		  sops-nix.nixosModules.sops
 		  home-manager.nixosModules.home-manager 
 		  {
 			nixpkgs.overlays = [ unstableOverlay ];
