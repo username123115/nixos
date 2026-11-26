@@ -80,6 +80,13 @@
 	# Distrobox emergency exit
 	bashrcExtra = ''
 
+find_bindir() {
+  dirname $(readlink -f $(which $1))
+}
+cd_find_bindir() {
+  cd $(find_bindir $1)
+}
+alias cfb="cd_find_bindir"
 alias ns="nix search nixpkgs"
 alias slop="npx @openai/codex"
 [ -n "$DISTROBOX_ENTER_PATH" ] && . "$HOME/.bash-distrobox-rc"
